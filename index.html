@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Bolos Da Vina | Doces Caseiros com Gostinho de Infância</title>
+    <meta name="description" content="Deliciosos bolos caseiros, balas de coco caseiras e docinhos para festa feitos com carinho em Osasco - SP. Sabores que trazem memórias especiais e receitas tradicionais." />
+    <meta name="keywords" content="Confeitaria em Osasco, Bolos caseiros, Doces caseiros, Balas de coco, Docinhos para festas, Maçã do amor, Osasco doces, Bolos decorados" />
+    <meta name="author" content="Bolos Da Vina" />
+    
+    <!-- Open Graph (Facebook/Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bolos Da Vina | Doces Caseiros com Gostinho de Infância" />
+    <meta property="og:description" content="Bolos, docinhos e balas de coco produzidos com carinho em Osasco. Sabores que trazem memórias especiais." />
+    <meta property="og:image" content="/images/hero_cake.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playball&display=swap" rel="stylesheet">
+    
+    <!-- Favicon link (fallback) -->
+    <link rel="icon" type="image/png" href="/images/product_bolos.png" />
+  </head>
+  <body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- VLibras Integration for Sign Language Translation -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      // Initialize VLibras
+      window.addEventListener('load', function() {
+        if (window.VLibras) {
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        }
+      });
+    </script>
+  </body>
+</html>
